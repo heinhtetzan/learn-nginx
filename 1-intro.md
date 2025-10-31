@@ -1,4 +1,4 @@
-## Video Lesson from youtube?
+## Video Lesson from youtube
 - https://www.youtube.com/watch?v=iInUBOVeBCc
 - https://www.youtube.com/watch?v=xo5V9g9joFs
 
