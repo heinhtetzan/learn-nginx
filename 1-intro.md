@@ -1,4 +1,6 @@
-Great question — let’s break **Nginx** down step-by-step so you understand **what it is, why it exists, and how it works** — including a bit of its **history**.
+## Video Lesson from youtube?
+- https://www.youtube.com/watch?v=iInUBOVeBCc
+- https://www.youtube.com/watch?v=xo5V9g9joFs
 
 ---
 
