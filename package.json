@@ -1,0 +1,24 @@
+{
+  "name": "learn-nginx",
+  "version": "1.0.0",
+  "description": "A comprehensive guide to learning Nginx — from basic concepts to advanced configurations for production deployments.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heinhtetzan/learn-nginx.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/heinhtetzan/learn-nginx/issues"
+  },
+  "homepage": "https://github.com/heinhtetzan/learn-nginx#readme",
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}
