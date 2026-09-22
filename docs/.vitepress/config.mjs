@@ -3,80 +3,101 @@ import { withMermaid } from 'vitepress-plugin-mermaid'
 
 export default withMermaid(
   defineConfig({
-    title: 'Learn Nginx',
-    description: 'A comprehensive, modern guide to mastering Nginx web server, reverse proxy, and API gateway architectures.',
+    title: 'Web Servers Master Guide',
+    description: 'An authoritative guide to Apache, NGINX, Caddy, and Ferron for Monolith and Microservices architectures.',
     base: process.env.BASE_PATH || '/',
-    
+
     head: [
       ['link', { rel: 'icon', href: '/favicon.ico' }],
-      ['meta', { name: 'theme-color', content: '#009639' }]
+      ['meta', { name: 'theme-color', content: '#2563eb' }]
     ],
 
     themeConfig: {
-      siteTitle: 'Learn Nginx',
-      logo: {
-        light: 'https://upload.wikimedia.org/wikipedia/commons/c/c5/Nginx_logo.svg',
-        dark: 'https://upload.wikimedia.org/wikipedia/commons/c/c5/Nginx_logo.svg'
-      },
+      siteTitle: 'Web Servers Guide',
 
       nav: [
         { text: 'Home', link: '/' },
-        { text: 'Getting Started', link: '/getting-started/01-intro' },
-        { text: 'Core Concepts', link: '/core-concepts/04-https-config' },
-        { text: 'Production Architecture', link: '/production-architecture/08-microservice' },
-        { text: 'Backend Integrations', link: '/backend-integrations/13-nodejs' },
-        { text: 'Cheatsheet', link: '/reference/cheatsheet' }
+        { text: '01. Fundamentals', link: '/01-what-is-web-server/01-what-is-a-web-server' },
+        {
+          text: 'Servers',
+          items: [
+            { text: '02. Apache HTTP Server', link: '/02-apache/01-installation-and-setup' },
+            { text: '03. NGINX', link: '/03-nginx/01-installation-and-setup' },
+            { text: '04. Caddy', link: '/04-caddy/01-installation-and-setup' },
+            { text: '05. Ferron (Rust)', link: '/05-ferron/01-installation-and-setup' }
+          ]
+        },
+        { text: '06. Comparisons', link: '/06-comparisons-and-blueprints/01-concurrency-models' },
+        { text: 'Rosetta Stone', link: '/06-comparisons-and-blueprints/03-rosetta-stone' }
       ],
 
       sidebar: {
         '/': [
           {
-            text: '🚀 Getting Started',
+            text: '🌐 01. What is a Web Server?',
             collapsed: false,
             items: [
-              { text: '01. Introduction to Nginx', link: '/getting-started/01-intro' },
-              { text: '02. Installation & Setup', link: '/getting-started/02-install-setup' },
-              { text: '03. HTTP Configuration', link: '/getting-started/03-http-config' }
+              { text: '01. What is a Web Server?', link: '/01-what-is-web-server/01-what-is-a-web-server' },
+              { text: '02. How Web Servers Work', link: '/01-what-is-web-server/02-how-web-servers-work' },
+              { text: '03. Monolith vs. Microservices', link: '/01-what-is-web-server/03-monolith-vs-microservices' }
             ]
           },
           {
-            text: '🛡️ Core Concepts',
+            text: '🏛️ 02. Apache HTTP Server',
             collapsed: false,
             items: [
-              { text: '04. HTTPS & SSL/TLS', link: '/core-concepts/04-https-config' },
-              { text: '05. Key Features & Tuning', link: '/core-concepts/05-features' },
-              { text: '06. Reverse Proxy Setup', link: '/core-concepts/06-reverse-proxy' },
-              { text: '07. Configuration Reference', link: '/core-concepts/07-config' },
-              { text: 'WebSocket Reverse Proxy', link: '/core-concepts/websockets' }
+              { text: '01. Installation & Setup', link: '/02-apache/01-installation-and-setup' },
+              { text: '02. What, Why & How', link: '/02-apache/02-what-why-how' },
+              { text: '03. Architecture & MPM Engine', link: '/02-apache/03-architecture-and-mpm' },
+              { text: '04. Monolith Deployments', link: '/02-apache/04-monolith-deployments' },
+              { text: '05. Microservices & Reverse Proxy', link: '/02-apache/05-microservices-and-reverse-proxy' },
+              { text: '06. Practical Examples & Code Samples', link: '/02-apache/06-practical-examples' }
             ]
           },
           {
-            text: '⚡ Production Architecture',
+            text: '⚡ 03. NGINX',
             collapsed: false,
             items: [
-              { text: '08. Microservices API Gateway', link: '/production-architecture/08-microservice' },
-              { text: 'Production Security Hardening', link: '/production-architecture/security-hardening' },
-              { text: 'HTTP/3 & QUIC Protocol', link: '/production-architecture/http3-quic' },
-              { text: 'Caching & Compression', link: '/production-architecture/caching-compression' }
+              { text: '01. Installation & Setup', link: '/03-nginx/01-installation-and-setup' },
+              { text: '02. What, Why & How', link: '/03-nginx/02-what-why-how' },
+              { text: '03. Architecture & Internals', link: '/03-nginx/03-architecture-and-internals' },
+              { text: '04. Monolith Deployments', link: '/03-nginx/04-monolith-deployments' },
+              { text: '05. Microservices API Gateway', link: '/03-nginx/05-microservices-api-gateway' },
+              { text: '06. Practical Examples & Code Samples', link: '/03-nginx/06-practical-examples' }
             ]
           },
           {
-            text: '🔌 Backend Integrations',
+            text: '🔒 04. Caddy',
             collapsed: false,
             items: [
-              { text: 'Node.js (Express / Next.js)', link: '/backend-integrations/13-nodejs' },
-              { text: 'Python (FastAPI / Django)', link: '/backend-integrations/python' },
-              { text: 'Laravel & PHP-FPM', link: '/backend-integrations/09-laravel' },
-              { text: 'Go (Golang)', link: '/backend-integrations/12-go' },
-              { text: 'Java (Spring Boot)', link: '/backend-integrations/10-java' },
-              { text: 'C# ASP.NET Core (.NET)', link: '/backend-integrations/11-dot-net' }
+              { text: '01. Installation & Setup', link: '/04-caddy/01-installation-and-setup' },
+              { text: '02. What, Why & How', link: '/04-caddy/02-what-why-how' },
+              { text: '03. Architecture & Auto-HTTPS', link: '/04-caddy/03-architecture-and-auto-https' },
+              { text: '04. Monolith Deployments', link: '/04-caddy/04-monolith-deployments' },
+              { text: '05. Microservices & Reverse Proxy', link: '/04-caddy/05-microservices-and-reverse-proxy' },
+              { text: '06. Practical Examples & Code Samples', link: '/04-caddy/06-practical-examples' }
             ]
           },
           {
-            text: '📖 Quick Reference',
+            text: '🦀 05. Ferron (Rust)',
             collapsed: false,
             items: [
-              { text: 'Nginx CLI & Cheatsheet', link: '/reference/cheatsheet' }
+              { text: '01. Installation & Setup', link: '/05-ferron/01-installation-and-setup' },
+              { text: '02. What, Why & How', link: '/05-ferron/02-what-why-how' },
+              { text: '03. Architecture & KDL Configuration', link: '/05-ferron/03-architecture-and-kdl' },
+              { text: '04. Monolith Deployments', link: '/05-ferron/04-monolith-deployments' },
+              { text: '05. Microservices & Reverse Proxy', link: '/05-ferron/05-microservices-and-reverse-proxy' },
+              { text: '06. Practical Examples & Code Samples', link: '/05-ferron/06-practical-examples' }
+            ]
+          },
+          {
+            text: '⚖️ 06. Comparisons & Blueprints',
+            collapsed: false,
+            items: [
+              { text: '01. Concurrency & I/O Models', link: '/06-comparisons-and-blueprints/01-concurrency-models' },
+              { text: '02. Decision Matrix: Which to Choose?', link: '/06-comparisons-and-blueprints/02-decision-matrix' },
+              { text: '03. Rosetta Stone: Config Cheat Sheet', link: '/06-comparisons-and-blueprints/03-rosetta-stone' },
+              { text: '04. Production Security Hardening & TLS', link: '/06-comparisons-and-blueprints/04-security-hardening' }
             ]
           }
         ]
@@ -92,12 +113,7 @@ export default withMermaid(
 
       footer: {
         message: 'Released under the MIT License.',
-        copyright: 'Learn Nginx Guide — Created for modern developers and DevOps engineers.'
-      },
-
-      editLink: {
-        pattern: 'https://github.com/heinhtetzan/learn-nginx/edit/main/docs/:path',
-        text: 'Edit this page on GitHub'
+        copyright: 'Web Servers Master Guide — Architected for Production.'
       }
     },
 

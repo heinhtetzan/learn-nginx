@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Servers Master Sandbox</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #0f172a;
+            color: #f8fafc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 2.5rem;
+            max-width: 600px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        h1 { color: #38bdf8; margin-top: 0; }
+        p { color: #94a3b8; line-height: 1.6; }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .box {
+            background: #0f172a;
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid #334155;
+        }
+        .box strong { display: block; color: #f1f5f9; margin-bottom: 0.25rem; }
+        .box span { color: #38bdf8; font-family: monospace; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🚀 Web Servers Master Sandbox</h1>
+        <p>This static asset is being served at wire speed directly by the active edge web server.</p>
+        
+        <div class="grid">
+            <div class="box">
+                <strong>🏛️ Apache</strong>
+                <span>Port :8081</span>
+            </div>
+            <div class="box">
+                <strong>⚡ NGINX</strong>
+                <span>Port :8082</span>
+            </div>
+            <div class="box">
+                <strong>🔒 Caddy</strong>
+                <span>Port :8083</span>
+            </div>
+            <div class="box">
+                <strong>🦀 Ferron</strong>
+                <span>Port :8084</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

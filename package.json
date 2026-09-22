@@ -1,25 +1,28 @@
 {
-  "name": "learn-nginx",
+  "name": "web-servers-guide",
   "version": "1.0.0",
-  "description": "A comprehensive guide to learning Nginx — from basic concepts to advanced configurations for production deployments.",
+  "description": "An exhaustive, production-grade guide to modern web servers: Apache, NGINX, Caddy, and Ferron across Monolith and Microservices architectures.",
   "main": "index.js",
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/heinhtetzan/learn-nginx.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "web-server",
+    "apache",
+    "nginx",
+    "caddy",
+    "ferron",
+    "reverse-proxy",
+    "api-gateway",
+    "monolith",
+    "microservices",
+    "devops",
+    "architecture"
+  ],
+  "license": "MIT",
   "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/heinhtetzan/learn-nginx/issues"
-  },
-  "homepage": "https://github.com/heinhtetzan/learn-nginx#readme",
   "devDependencies": {
     "mermaid": "^11.17.2",
     "vitepress": "^1.6.4",

@@ -1,0 +1,17 @@
+:80 {
+    encode gzip zstd
+
+    # Static assets
+    root * /usr/share/caddy
+    file_server
+
+    # Reverse proxy to backend microservice
+    handle_path /api/* {
+        reverse_proxy backend:5678
+    }
+
+    # Health check
+    handle /healthz {
+        respond "healthy" 200
+    }
+}
