@@ -1,4 +1,4 @@
-# 02. Caddy: What, Why & How
+# 02. Caddy: Core Concepts & Overview
 
 Caddy represents the modern generation of cloud-native web servers. By rethinking defaults around security and developer ergonomics, it has transformed how engineering teams manage TLS and reverse proxies.
 

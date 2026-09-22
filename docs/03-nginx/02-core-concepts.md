@@ -1,4 +1,4 @@
-# 02. NGINX: What, Why & How
+# 02. NGINX: Core Concepts & Overview
 
 NGINX powers over 30% of the world's busiest websites. Understanding its architecture and operational model is a core competency for any infrastructure or lead engineer.
 

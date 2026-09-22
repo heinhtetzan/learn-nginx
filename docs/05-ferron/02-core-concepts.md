@@ -1,4 +1,4 @@
-# 02. Ferron: What, Why & How
+# 02. Ferron: Core Concepts & Overview
 
 Ferron brings modern systems programming principles to the web server domain. By combining Rust's compile-time safety guarantees with Tokio's async concurrency, it establishes a new benchmark for secure, low-latency edge serving.
 

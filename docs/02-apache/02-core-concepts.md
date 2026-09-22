@@ -1,4 +1,4 @@
-# 02. Apache: What, Why & How
+# 02. Apache: Core Concepts & Overview
 
 Understanding Apache’s origins, architectural philosophy, and practical trade-offs is essential when evaluating whether to maintain, optimize, or migrate away from it.
 

@@ -23,19 +23,19 @@ features:
     link: /01-what-is-web-server/01-what-is-a-web-server
   - icon: 🏛️
     title: 02. Apache HTTP Server
-    details: (01) Install, (02) What/Why/How, (03) Architecture & MPMs, (04) Monolith, (05) Microservices, (06) Practical Examples.
+    details: (01) Install, (02) Core Concepts, (03) Architecture & MPMs, (04) Monolith, (05) Microservices, (06) Practical Examples.
     link: /02-apache/01-installation-and-setup
   - icon: ⚡
     title: 03. NGINX
-    details: (01) Install, (02) What/Why/How, (03) Architecture & epoll, (04) Monolith, (05) Microservices Gateway, (06) Practical Examples.
+    details: (01) Install, (02) Core Concepts, (03) Architecture & epoll, (04) Monolith, (05) Microservices Gateway, (06) Practical Examples.
     link: /03-nginx/01-installation-and-setup
   - icon: 🔒
     title: 04. Caddy
-    details: (01) Install, (02) What/Why/How, (03) Architecture & Auto-HTTPS, (04) Monolith, (05) Microservices & Reverse Proxy, (06) Practical Examples.
+    details: (01) Install, (02) Core Concepts, (03) Architecture & Auto-HTTPS, (04) Monolith, (05) Microservices & Reverse Proxy, (06) Practical Examples.
     link: /04-caddy/01-installation-and-setup
   - icon: 🦀
     title: 05. Ferron (Rust)
-    details: (01) Install, (02) What/Why/How, (03) Architecture & KDL, (04) Monolith, (05) Microservices & Reverse Proxy, (06) Practical Examples.
+    details: (01) Install, (02) Core Concepts, (03) Architecture & KDL, (04) Monolith, (05) Microservices & Reverse Proxy, (06) Practical Examples.
     link: /05-ferron/01-installation-and-setup
   - icon: ⚖️
     title: 06. Comparisons & Blueprints

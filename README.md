@@ -56,7 +56,7 @@ docker compose down
 
 ### 🏛️ 02. Apache HTTP Server
 * [01. Installation & Setup](./docs/02-apache/01-installation-and-setup.md) — Step-by-step installation on Ubuntu, RHEL, macOS, and Docker.
-* [02. What, Why & How](./docs/02-apache/02-what-why-how.md) — Origins, strengths, weaknesses, and the 16-phase Hook pipeline.
+* [02. Core Concepts & Overview](./docs/02-apache/02-core-concepts.md) — Origins, strengths, weaknesses, and the 16-phase Hook pipeline.
 * [03. Architecture & MPM Engine](./docs/02-apache/03-architecture-and-mpm.md) — Prefork vs. Worker vs. Event MPM, directory precedence, and `.htaccess` penalties.
 * [04. Monolith Deployments](./docs/02-apache/04-monolith-deployments.md) — `mod_proxy_fcgi` for PHP-FPM, Gunicorn WSGI, and static asset caching.
 * [05. Microservices & Reverse Proxy](./docs/02-apache/05-microservices-and-reverse-proxy.md) — `mod_proxy_balancer`, active health checking (`mod_proxy_hcheck`), and WebSockets.
@@ -64,7 +64,7 @@ docker compose down
 
 ### ⚡ 03. NGINX
 * [01. Installation & Setup](./docs/03-nginx/01-installation-and-setup.md) — Mainline vs. stable, installing on Ubuntu, RHEL, and Docker.
-* [02. What, Why & How](./docs/03-nginx/02-what-why-how.md) — The C10K problem, non-blocking event loops, and why NGINX conquered the web.
+* [02. Core Concepts & Overview](./docs/03-nginx/02-core-concepts.md) — The C10K problem, non-blocking event loops, and why NGINX conquered the web.
 * [03. Architecture & Internals](./docs/03-nginx/03-architecture-and-internals.md) — Master/worker processes, CPU affinity, location matching algorithm, and zero-copy `sendfile`.
 * [04. Monolith Deployments](./docs/03-nginx/04-monolith-deployments.md) — FastCGI over Unix domain sockets, front-controller routing, and edge microcaching.
 * [05. Microservices API Gateway](./docs/03-nginx/05-microservices-api-gateway.md) — Leaky bucket rate limiting (`limit_req`), upstream keepalives, and gRPC/WebSocket proxying.
@@ -72,7 +72,7 @@ docker compose down
 
 ### 🔒 04. Caddy
 * [01. Installation & Setup](./docs/04-caddy/01-installation-and-setup.md) — Installing on Debian/Ubuntu, RHEL, Arch, and Docker.
-* [02. What, Why & How](./docs/04-caddy/02-what-why-how.md) — Go runtime, memory safety, automatic HTTPS, and why modern teams adopt Caddy.
+* [02. Core Concepts & Overview](./docs/04-caddy/02-core-concepts.md) — Go runtime, memory safety, automatic HTTPS, and why modern teams adopt Caddy.
 * [03. Architecture & Auto-HTTPS](./docs/04-caddy/03-architecture-and-auto-https.md) — Go M:N scheduler, ACME certificate lifecycle, and Caddyfile vs. JSON API.
 * [04. Monolith Deployments](./docs/04-caddy/04-monolith-deployments.md) — `php_fastcgi` single-directive power, SPA fallback routing, and Zstandard compression.
 * [05. Microservices & Reverse Proxy](./docs/04-caddy/05-microservices-and-reverse-proxy.md) — Declarative named matchers, active and passive health checking, and internal mTLS.
@@ -80,7 +80,7 @@ docker compose down
 
 ### 🦀 05. Ferron (Rust)
 * [01. Installation & Setup](./docs/05-ferron/01-installation-and-setup.md) — Binary download, Cargo, and Docker setup.
-* [02. What, Why & How](./docs/05-ferron/02-what-why-how.md) — Eliminating C-memory vulnerabilities with Rust, zero GC pauses, and Tokio async runtime.
+* [02. Core Concepts & Overview](./docs/05-ferron/02-core-concepts.md) — Eliminating C-memory vulnerabilities with Rust, zero GC pauses, and Tokio async runtime.
 * [03. Architecture & KDL Configuration](./docs/05-ferron/03-architecture-and-kdl.md) — Tokio work-stealing executor, zero-cost abstractions, and KDL syntax.
 * [04. Monolith Deployments](./docs/05-ferron/04-monolith-deployments.md) — High-throughput static file serving, FastCGI/SCGI integration, and SPA routing.
 * [05. Microservices & Reverse Proxy](./docs/05-ferron/05-microservices-and-reverse-proxy.md) — Upstream load balancing, structured JSON tracing for Loki/ELK, and low-memory routing.
