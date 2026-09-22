@@ -4,7 +4,9 @@
   "description": "A comprehensive guide to learning Nginx — from basic concepts to advanced configurations for production deployments.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,8 @@
   },
   "homepage": "https://github.com/heinhtetzan/learn-nginx#readme",
   "devDependencies": {
-    "vitepress": "^1.6.4"
+    "mermaid": "^11.17.2",
+    "vitepress": "^1.6.4",
+    "vitepress-plugin-mermaid": "^2.0.17"
   }
 }
